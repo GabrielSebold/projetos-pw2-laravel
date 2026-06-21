@@ -94,6 +94,14 @@ php artisan serve
 
 Depois acesse `http://127.0.0.1:8000`.
 
+Links úteis durante a execução:
+
+```text
+Sistema Laravel: http://127.0.0.1:8000
+phpMyAdmin / MySQL XAMPP: http://localhost/phpmyadmin
+Banco do projeto: http://localhost/phpmyadmin/index.php?route=/database/structure&db=pw2_projetos
+```
+
 Usuário de demonstração criado pelo seeder:
 
 ```text
@@ -101,9 +109,17 @@ E-mail: admin@pw2.local
 Senha: password
 ```
 
-## Banco MySQL opcional
+## Banco MySQL no XAMPP
 
-O projeto está pronto em SQLite para facilitar a apresentação. Se quiser usar MySQL/MariaDB, crie um banco chamado `pw2_projetos` e altere o `.env`:
+O projeto está configurado para usar o MySQL do XAMPP. Antes de rodar as migrations, inicie **Apache** e **MySQL** no XAMPP e crie um banco chamado `pw2_projetos` pelo phpMyAdmin.
+
+Link do phpMyAdmin:
+
+```text
+http://localhost/phpmyadmin
+```
+
+Configuração esperada no `.env`:
 
 ```env
 DB_CONNECTION=mysql
