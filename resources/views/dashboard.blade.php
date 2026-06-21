@@ -7,7 +7,7 @@
         <div>
             <p class="eyebrow">Programação Web 2</p>
             <h1>Sistema de acompanhamento de projetos acadêmicos</h1>
-            <p class="hero-text">Organize projetos por categoria, acompanhe status, responsáveis e prazos, e apresente uma aplicação Laravel com MVC, banco de dados e interface reutilizável.</p>
+            <p class="hero-text">Cadastre categorias, organize projetos por período letivo e registre as etapas do desenvolvimento.</p>
             <div class="hero-actions">
                 <a class="button primary" href="{{ route('projetos.create') }}">Novo projeto</a>
                 <a class="button light" href="{{ route('categorias.create') }}">Nova categoria</a>
